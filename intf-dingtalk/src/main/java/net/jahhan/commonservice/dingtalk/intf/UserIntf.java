@@ -1,15 +1,25 @@
 package net.jahhan.commonservice.dingtalk.intf;
 
-import com.frameworkx.common.extension.constant.ContentType;
+import javax.validation.constraints.NotNull;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import net.jahhan.common.extension.constant.ContentType;
 import net.jahhan.commonservice.dingtalk.vo.ivo.BatchUserIdIVO;
 import net.jahhan.commonservice.dingtalk.vo.ivo.UserInfoIVO;
-import net.jahhan.commonservice.dingtalk.vo.ovo.*;
-
-import javax.validation.constraints.NotNull;
-import javax.ws.rs.*;
+import net.jahhan.commonservice.dingtalk.vo.ovo.GetAdminUserOVO;
+import net.jahhan.commonservice.dingtalk.vo.ovo.GetUserOVO;
+import net.jahhan.commonservice.dingtalk.vo.ovo.ListDepartmentUserInfoOVO;
+import net.jahhan.commonservice.dingtalk.vo.ovo.ResponseOVO;
+import net.jahhan.commonservice.dingtalk.vo.ovo.SimpleUserOVO;
+import net.jahhan.commonservice.dingtalk.vo.ovo.UserIdOVO;
 
 @Path("user")
 @Consumes({ ContentType.APPLICATION_JSON_UTF_8 })

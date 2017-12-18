@@ -1,18 +1,23 @@
 package net.jahhan.commonservice.dingtalk.intf;
 
-import com.frameworkx.common.extension.constant.ContentType;
+import javax.validation.constraints.NotNull;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import net.jahhan.common.extension.constant.ContentType;
 import net.jahhan.commonservice.dingtalk.vo.ivo.CreateDepartmentIVO;
 import net.jahhan.commonservice.dingtalk.vo.ivo.UpdateDepartmentIVO;
 import net.jahhan.commonservice.dingtalk.vo.ovo.CreateDepartmentOVO;
 import net.jahhan.commonservice.dingtalk.vo.ovo.DepartmentListOVO;
 import net.jahhan.commonservice.dingtalk.vo.ovo.GetDepartmentOVO;
 import net.jahhan.commonservice.dingtalk.vo.ovo.ResponseOVO;
-
-import javax.validation.constraints.NotNull;
-import javax.ws.rs.*;
 
 @Path("department")
 @Consumes({ ContentType.APPLICATION_JSON_UTF_8 })

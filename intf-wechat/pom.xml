@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.jahhan.interface</groupId>
 	<version>1.0-SNAPSHOT</version>
-	<artifactId>intf-dingtalk</artifactId>
+	<artifactId>intf-wechat</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 	<description>The simple demo inteface module of frameworkx project</description>
