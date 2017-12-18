@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.frameworkx</groupId>
+	<version>1.0-SNAPSHOT</version>
+	<artifactId>intf-dingtalk</artifactId>
+	<packaging>jar</packaging>
+	<name>${project.artifactId}</name>
+	<description>The simple demo inteface module of frameworkx project</description>
+	<repositories>
+		<repository>
+			<id>frameworkx</id>
+			<url>http://123.206.186.31:8081/nexus/content/repositories/frameworkx</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://123.206.186.31:8081/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+	<properties>
+		<skip_maven_deploy>true</skip_maven_deploy>
+		<framework_version>1.0-SNAPSHOT</framework_version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.frameworkx</groupId>
+			<artifactId>deploy-service</artifactId>
+			<version>${framework_version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
